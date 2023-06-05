@@ -18,7 +18,7 @@ Swap method:<br>
 suggestion: You could try store the value of `arr[i]` before swaping `arr[i]` with `arr[j]`.<br>
 ## Student Got
 Now I understand where the bug is :<br>
-Since I first let `arr[i] = arr[j]`, the value of `arr[i]` already changed to `arr[j]`. So in line4 of previous screenshot, when I let `arr[j] = arr[i]`, `arr[i]` is equals to `arr[j]`. So if my input is `{2,3,4}`, I will end up get `{4,3,4}`.<br>
+Since I first let `arr[i] = arr[j]`, the value of `arr[i]` already changed to `arr[j]`. So in line4 of previous screenshot, when I let `arr[j] = arr[i]`, `arr[i]` is equals to `arr[j]`. So if my input is `{2,3,4}` and want to swap value at index 0 and index 2, I will end up get `{4,3,4}`.<br>
 I tried to store the value of `arr[i]` before actual swapping, and let `arr[j]` equals the value we stored. Then I tried to run test again, and it worked(see screenshot below). Thanks.<br>
 <img width="644" alt="截屏2023-06-05 上午10 06 35" src="https://github.com/qianyupeng1010/labreport5/assets/130001791/3c6f3b90-e609-4163-a9c6-5e4c26ce217e"><br>
 <img width="846" alt="截屏2023-06-05 上午10 07 42" src="https://github.com/qianyupeng1010/labreport5/assets/130001791/670a600e-429f-48b8-98cd-011cec296284"><br>
